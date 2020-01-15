@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"/> -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+    }
+    .container{
+        text-align: center;
+    }
+    .flex-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .result{
+        padding:10px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" width="200" height="50" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+    <div class="container mt-5">
+        <div class="row row-content">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body" >
+                        <h5 class="card-title">Crash stats per area</h5>
+                        <canvas id="barChart" width="500" height="300"></canvas>
+                    </div> 
+                </div>
+            </div>    
+            <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body" >
+                            <h5 class="card-title">Crash stats per day</h5>                            
+                            <canvas id="lineChart" width="500" height="300"></canvas>
+                        </div> 
+                    </div>
+                </div>      
+        </div>
+
+        <div class="row row-content mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body" >
+                            <h5 class="card-title">Crash stats sorted by Vehicle Type</h5>
+                            <canvas id="pieChart" width="500" height="300"></canvas>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body" >
+                                <h5 class="card-subtitle mb-2 text-muted">Major contributing factor for crashes</h5>
+                                <p class="card-title" id="sight1" style="font-weight:bold; color: darkred"></p>   
+                                <h6 class="card-subtitle mb-2 text-muted">No. of Crashes reported due to the above reason</h6>
+                                <p class="card-text" id="sight2" style="font-weight:bold; color: darkred"></p>   
+                            </div> 
+                        </div>
+                    </div>          
+        </div>
+        <div class="row row-content mt-5">
+                       
+        </div>
+
+        <footer>
+
+        </footer>
+
+    </div>
+    
+        
+
+    <!-- <script src="myScript.js"></script> -->
+    <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+</body>
+</html>
